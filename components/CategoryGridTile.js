@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     shadowOffset: {width: 0, height: 2},
     shadowRadius: 10,
     elevation: 3,
-    padding: 10,
+    padding: 15,
     justifyContent: 'flex-end',
     alignItems: 'flex-end'
   },
