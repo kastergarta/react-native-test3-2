@@ -1,5 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button, FlatList, TouchableOpacity, TouchableNativeFeedback, Platform, TouchableNativeFeedbackBase} from 'react-native';
+import { 
+  View,
+  Text,
+  StyleSheet, 
+  TouchableOpacity,
+  TouchableNativeFeedback, 
+  Platform
+} from 'react-native';
 
 const CategoryGridTile = props => {
 
@@ -11,9 +18,9 @@ const CategoryGridTile = props => {
 
   return (
     <View style={styles.gridItem}>
-    <TouchableCmp style={{flex: 1}} onPress={() =>{props.onSelect}}>
+    <TouchableCmp style={{flex: 1}} onPress={props.onSelect}>
       <View style={{...styles.container, ...{backgroundColor: props.color}}}>
-        <Text style={styles.title}>
+        <Text style={styles.title} numberOfLines={2}>
           {props.title}
         </Text>
       </View>
